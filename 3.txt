@@ -1,0 +1,29 @@
+//input: int a[], int n
+int min=10000;
+// tim khoang cach nho nhat giua 2 phan tu bat ki trong mang
+for (int i = 0; i < n; i++){
+        for (int j = i + 1; j < n; j++){
+	if (a[j] > a[i]) {
+		if (a[j] - a[i] < min) min = a[j] - a[i];
+	} else if (a[i] - a[j] < min) min = a[i] - a[j];
+        }        
+}
+//khai bao mang 2 chieu b chua cac gia tri output
+int b[][]; int p = 0; int k = 0;
+//so sanh khoang cach giua cac phan tu trong mang voi khoang cach nho nhat
+for (int i = 0; i < n; i++){
+        for (int j = i + 1; j < n; j++){
+	if (a[j] > a[i]) {
+		if (a[j] - a[i] = min) {
+			b[p][k] = a[i];
+			b[p][k+1] = a[j]
+		}
+	} else if (a[i] - a[j] = min) {
+			b[p][k] = a[j];
+			b[p][k+1] = a[i]
+	}
+	p++; k++;
+        }        
+}
+// output
+print b[][]
