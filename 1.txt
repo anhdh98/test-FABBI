@@ -1,5 +1,6 @@
 //input: int a[]; 
 int b[]; int c[]; int d[];
+//tach mang dau vao thanh 3 mang
 for (i = 0; i < 3*n; i++) {
 	j = 0;
 	if ((i mod 3) == 1) {
@@ -11,6 +12,7 @@ for (i = 0; i < 3*n; i++) {
 	}
 	j++;
 }
+// gop 3 mang
 for ( i = 0; i<3*n; i++) {
 	if (i<n) {
 		a[i] = b[i];
@@ -22,4 +24,5 @@ for ( i = 0; i<3*n; i++) {
 		a[i] = d[i - 2*n];
 	}
 }
+//in ra mang da sap xep theo yeu cau
 print(a[i]);
